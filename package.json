@@ -1,0 +1,70 @@
+{
+  "name": "ytdl-plus",
+  "version": "1.0.0",
+  "description": "A comprehensive, type-safe YouTube downloader. Download videos, audio, playlists, search YouTube, and more.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "bin": {
+    "ytdl-plus": "./dist/cjs/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "dev": "tsc -p tsconfig.cjs.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/ --ext .ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "video",
+    "audio",
+    "playlist",
+    "download",
+    "mp4",
+    "mp3",
+    "stream",
+    "subtitle",
+    "typescript",
+    "ytdl"
+  ],
+  "author": "Md Ferdous Alam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdferdousalam/ytdl-plus"
+  },
+  "bugs": {
+    "url": "https://github.com/mdferdousalam/ytdl-plus/issues"
+  },
+  "homepage": "https://github.com/mdferdousalam/ytdl-plus#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "youtubei.js": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}
