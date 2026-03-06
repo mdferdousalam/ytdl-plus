@@ -1,6 +1,6 @@
 {
   "name": "ytdl-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive, type-safe YouTube downloader. Download videos, audio, playlists, search YouTube, and more.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -50,7 +50,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mdferdousalam/ytdl-plus"
+    "url": "git+https://github.com/mdferdousalam/ytdl-plus.git"
   },
   "bugs": {
     "url": "https://github.com/mdferdousalam/ytdl-plus/issues"

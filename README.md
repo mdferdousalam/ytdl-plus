@@ -1,5 +1,10 @@
 # ytdl-plus
 
+[![npm version](https://img.shields.io/npm/v/ytdl-plus.svg)](https://www.npmjs.com/package/ytdl-plus)
+[![CI](https://github.com/mdferdousalam/ytdl-plus/actions/workflows/ci.yml/badge.svg)](https://github.com/mdferdousalam/ytdl-plus/actions/workflows/ci.yml)
+[![npm downloads](https://img.shields.io/npm/dm/ytdl-plus.svg)](https://www.npmjs.com/package/ytdl-plus)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A comprehensive, type-safe YouTube downloader for Node.js. Download videos, audio, playlists, search YouTube, and more.
 
 ## Features
