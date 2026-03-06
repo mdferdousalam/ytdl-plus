@@ -60,7 +60,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "youtubei.js": "^13.0.0"
+    "youtubei.js": "^16.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
