@@ -13,7 +13,7 @@
     }
   },
   "bin": {
-    "ytdl-plus": "./dist/cjs/cli/index.js"
+    "ytdl-plus": "dist/cjs/cli/index.js"
   },
   "files": [
     "dist",
